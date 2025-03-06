@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            height: 400px;
+            padding-top: 30px;
+        }
+
+        .left,
+        .right {
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        .left img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .right {
+            flex-direction: column;
+            text-align: center;
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        .right h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        .right p {
+            font-size: 1.2rem;
+            margin: 10px;
+            text-align: justify;
+        }
+
+        .right button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            align-self: start;
+        }
+
+        .timetable h2 {
+            text-align: center;
+        }
+
+        #timetable {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        #timetable th,
+        #timetable td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
+        }
+
+        .contactform {
+            margin-top: 20px;
+            width: 100%;
+            display: block;
+        }
+
+        .contactform table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .contactform td {
+            padding: 20px;
+            text-align: center;
+            vertical-align: top;
+        }
+
+
+
+        .videos {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .videos video {
+            width: 490px;
+        }
+
+        .iframe-container {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .iframe-container iframe {
+            width: 60%;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<!--  Horizontal Image -->
+<section class="header">
+    <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?cs=srgb&dl=daylight-environment-forest-459225.jpg&fm=jpg"
+        alt="nature" width="100%" height="200">
+</section>
+
+<section class="container">
+    <div class="left">
+        <img src="http://wallup.net/wp-content/uploads/2016/03/10/319576-photography-landscape-nature-water-grass-trees-plants-sunrise-lake.jpg"
+            alt="Profile Image">
+    </div>
+    <div class="right">
+        <h2>About Me</h2>
+        <p>
+            Asset Management Software (AMS) systems help organizations track, manage, and optimize their physical
+            and
+            digital assets throughout their lifecycle. These systems are commonly used in industries such as IT,
+            manufacturing, healthcare, and finance to improve efficiency, reduce costs, and ensure compliance.
+        </p>
+        <button>Read More</button>
+    </div>
+</section>
+<!--  Horizontal Image  End-->
+
+
+<!-- Image and About me -->
+<section class="asset-management">
+    <h1>Asset Management</h1>
+    <p>
+        Asset management is the systematic process of developing, operating, maintaining, and disposing of assets
+        cost-effectively. It involves tracking both physical and digital assets to maximize their value and ensure
+        optimal
+        utilization. Organizations across industries, including IT, manufacturing, healthcare, and finance, use
+        asset
+        management to improve efficiency, reduce costs, and enhance decision-making.
+    </p>
+    <p>
+        Effective asset management includes tracking asset lifecycles, scheduling maintenance, managing inventory,
+        and
+        ensuring compliance with regulatory standards. It helps businesses optimize resources, prevent asset
+        downtime, and
+        make informed financial decisions. Modern asset management systems utilize technologies such as RFID, GPS,
+        barcodes, and cloud computing to automate tracking and monitoring.
+    </p>
+</section>
+<!-- Image and About me End -->
+
+<!-- Time table -->
+
+<section class="timetable">
+    <h2>TIME TABLE</h2>
+    <table id="timetable">
+        <tr>
+            <th>Day/Period</th>
+            <th>I<br>9:30-10:20</th>
+            <th>II<br>10:20-11:10</th>
+            <th>III<br>11:10-12:00</th>
+            <th>12:00-12:40</th>
+            <th>IV<br>12:40-1:30</th>
+            <th>V<br>1:30-2:20</th>
+            <th>VI<br>2:20-3:10</th>
+            <th>VII<br>3:10-4:00</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Eng</td>
+            <td>Mat</td>
+            <td>Che</td>
+            <td rowspan="6"><b>L<br>U<br>N<br>C<br>H</b></td>
+            <td colspan="3">LAB</td>
+            <td>Phy</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td colspan="3">LAB</td>
+            <td>Eng</td>
+            <td>Che</td>
+            <td>Mat</td>
+            <td>SPORTS</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>Mat</td>
+            <td>Phy</td>
+            <td>Eng</td>
+            <td>Che</td>
+            <td colspan="2">LIBRARY</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td>Phy</td>
+            <td>Eng</td>
+            <td>Che</td>
+            <td colspan="3">LAB</td>
+            <td>Mat</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td colspan="3">LAB</td>
+            <td>Mat</td>
+            <td>Che</td>
+            <td>Eng</td>
+            <td>Phy</td>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td>Eng</td>
+            <td>Che</td>
+            <td>Mat</td>
+            <td colspan="3">SEMINAR</td>
+            <td>SPORTS</td>
+        </tr>
+    </table>
+</section>
+<!-- Time table End -->
+
+<!-- Contact from -->
+
+<section class="contactform">
+    <table border="1">
+        <tr>
+            <td width="50%">
+                <h2>Contact Us</h2>
+                <form class="form">
+                    <label>Name:</label>
+                    <input type="text"><br><br>
+
+                    <label>Email:</label>
+                    <input type="email"><br><br>
+
+                    <label>Mobile:</label>
+                    <input type="text"><br><br>
+
+                    <button type="submit">Send</button>
+                </form>
+            </td>
+            <td width="50%">
+                <h2>Our Office</h2>
+                <p>123 Main Street, City, Country</p>
+                <p>Phone: +1 234 567 890</p>
+                <p>Email: info@example.com</p>
+                <p>We are here to assist you with any questions.</p>
+            </td>
+        </tr>
+    </table>
+</section>
+<!-- Contact from End -->
+
+
+<!-- videos section -->
+<section class="videos">
+    <video controls>
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <video controls>
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <video controls>
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+<!-- videos section  End-->
+<!-- Iframe -->
+
+<section class="iframe-container">
+    <iframe src="https://www.youtube.com/embed/XV_s5U0fvdU?si=BGnZn7QAe6NCmZEw" title="Embedded Video" frameborder="0"
+        allowfullscreen></iframe>
+</section>
+<!-- Iframe End-->
+
+</body>
+
+</html>
